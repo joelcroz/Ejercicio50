@@ -13,7 +13,7 @@ namespace Ejercicio50
 			int cantidadEntre10y15=0, cantidadMenor7=0;
 			int sumaGenerados=0;
 			Random r = new Random();
-            for (int contador = 1; contador <= 15; contador++)
+            for (int contador = 1; contador <= 5; contador++)
             {
 				var numeroGenerado = r.Next(1, 21);
                 Console.WriteLine($"Nùmero generado={numeroGenerado}");
@@ -21,8 +21,7 @@ namespace Ejercicio50
                 if (numeroGenerado<7)
                 {
 					cantidadMenor7++;
-                }
-                if (numeroGenerado>=10 && numeroGenerado<=15)
+                } else if (numeroGenerado>=10 && numeroGenerado<=15)
                 {
 					cantidadEntre10y15++;
                 }
